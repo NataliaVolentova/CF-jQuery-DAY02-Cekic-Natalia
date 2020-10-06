@@ -1,0 +1,32 @@
+var jsonData=JSON.parse(images);
+for (var i=0;
+i < jsonData.length;
+i++) {
+    $(".container").append(`<div id="${i}" class="img-container"><img id="img${i}"src='${jsonData[i].image}'></div>`);
+    $(`#$ {
+        i
+    }
+    `).append(`<br><span>Relation: $ {
+        jsonData[i].relation
+    }
+    </span>`);
+    $(`#$ {
+        i
+    }
+    `).append(`<br><span>Name: $ {
+        jsonData[i].name
+    }
+    </span>`);
+}
+
+display: flex;
+flex-flow: row wrap;
+
+}
+div img {
+    width: 70%;
+    height: 80%;
+}
+.img-container {
+    width: 50%;
+}
